@@ -8,7 +8,7 @@ class Firstpage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Welcome'),
+        title: Text('WELCOME'),
         centerTitle: true,
       ),
       body: Center(
@@ -16,14 +16,15 @@ class Firstpage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-                'Use the system as : ',
-                style: TextStyle(color: Colors.indigo, fontSize: 30.0),
-              ),
-              SizedBox(height: 15.0),
+              'Use the system as : ',
+              style: TextStyle(color: Colors.indigo, fontSize: 30.0),
+            ),
+            SizedBox(height: 15.0),
             FlatButton(
               padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => PatientRegister()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => PatientRegister()));
               },
               child: Text(
                 'Patient',
@@ -35,7 +36,8 @@ class Firstpage extends StatelessWidget {
             FlatButton(
               padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 44.0),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => StaffLogin()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => StaffLogin()));
               },
               child: Text(
                 'Staff',
@@ -47,7 +49,8 @@ class Firstpage extends StatelessWidget {
             FlatButton(
               padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 34.0),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => Admin()));
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Admin()));
               },
               child: Text(
                 'Admin',
